@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} {{titre}} {% endblock %}
+
+
+{% block content %}
+	
+	<h1>Resultats de la recherche : </h1>
+
+	<p> Banana {{books[kind]}} </p>
+
+	{% for book in books %}
+    <li>
+    	banane
+        {{book.kind}}
+    </li>
+	{% endfor %}
+
+{% endblock %}

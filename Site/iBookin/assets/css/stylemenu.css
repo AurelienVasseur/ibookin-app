@@ -1,0 +1,58 @@
+.wrapper {
+   display: flex;
+   width: 100%;
+   position: fixed;
+   background-color: pink;
+}
+
+#sidebar {
+    min-width: 175px;
+    max-width: 175px;
+    background-color: green;
+    min-height: 100vh;
+    height: 100%;
+    transition: all 0.3s ease-out;
+}
+
+#sidebar.active {
+    min-width: 50px;
+    max-width: 50px;   
+}
+
+#sidebarCollapse {
+    height: 35px;
+}
+
+#page-content {
+    height: 100vh;   
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch; /*default*/
+}
+
+.navbar {
+    min-height: 50px;   
+}
+
+#content {
+    overflow: auto;
+}
+
+/* -- Custom Scrollbar -- */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}  
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+} 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888; 
+} 
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}

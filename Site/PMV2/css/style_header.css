@@ -1,0 +1,23 @@
+@media (min-width: 992px){
+
+	#navbar_header {
+		height: 10%;
+		opacity: 1;
+	}
+
+	#formulaire_header_recherche{
+		position: absolute;
+		left: 50%;
+		transform: translatex(-50%);
+	}
+
+	#champ_recherche_header{
+		width: 400px;
+	}
+
+	#navbar-right{
+		position: absolute;
+		right: 40px;
+	}
+
+}

@@ -4,7 +4,7 @@
 require "vendor/autoload.php";   // Inclusion de l'autoload
 
 
-$response = Requests::get('https://www.googleapis.com/books/v1/volumes?q=développement%20personnel&key=AIzaSyAGr-apcARa0DsYXyG7H-b0g2so3ELjYCU&maxResults=40&startIndex=0');
+$response = Requests::get('https://www.googleapis.com/books/v1/volumes?q=développement%20personnel&key=API_KEY_HERE&maxResults=40&startIndex=0');
 
 $books = json_decode($response->body);
 
